@@ -45,7 +45,7 @@ The app will start running at <http://localhost:8080>.
 - `repositories` — to communicate with the database;
 - `services` — to hold our business logic;
 - `controllers` — to listen to the client;
-
+- `bootstrap` — to load initial add to customer table in DB;
 - `resources/` - Contains all the static resources, templates and property files.
 - `resources/static` - contains static resources such as css, js and images.
 - `resources/templates` - contains server-side templates which are rendered by Spring.
