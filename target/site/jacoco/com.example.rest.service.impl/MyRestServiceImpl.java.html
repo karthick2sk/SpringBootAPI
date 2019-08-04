@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MyRestServiceImpl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">SpringRestWebservice</a> &gt; <a href="index.source.html" class="el_package">com.example.rest.service.impl</a> &gt; <span class="el_source">MyRestServiceImpl.java</span></div><h1>MyRestServiceImpl.java</h1><pre class="source lang-java linenums">/**
+ * 
+ */
+package com.example.rest.service.impl;
+
+
+import java.util.Arrays;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+
+import java.util.Optional;
+
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.example.rest.Models.Address;
+import com.example.rest.Models.Customer;
+
+import com.example.rest.Models.WordCountRequest;
+import com.example.rest.Models.WordCountResponse;
+import com.example.rest.controllers.MyController;
+import com.example.rest.repositories.CustomerRepository;
+import com.example.rest.service.MyRestService;
+
+/**
+ * @author sankark
+ *
+ */
+@Service
+public class MyRestServiceImpl implements MyRestService {
+
+
+	private CustomerRepository customerRepo;
+
+<span class="fc" id="L42">	Logger log = LoggerFactory.getLogger(MyController.class);</span>
+	
+	/*
+	 * Method name: findNOOfOccurance
+	 * Purpose: to find the number of occurance of each word from the input string
+	 * Parameters: WordCountRequest - Request Entity
+	 */
+
+	@Override
+	public List&lt;WordCountResponse&gt; findNoOfOccurance(WordCountRequest wordCountRequest) {
+		
+<span class="fc" id="L53">		log.debug(&quot;Inside method findNoOfOccurance&quot;);</span>
+
+<span class="fc" id="L55">		List&lt;WordCountResponse&gt; wordCount = Arrays.asList(wordCountRequest.getPara().toLowerCase().split(&quot; &quot;)).stream() // Split the input string using space a delimiter</span>
+<span class="fc" id="L56">				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting())).entrySet().stream() //count each word using stream collectors</span>
+<span class="fc" id="L57">				.sorted(Map.Entry.comparingByKey())																// sort the values based on key that is words</span>
+<span class="pc" id="L58">				.collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -&gt; e2, LinkedHashMap::new)) // to retain the sorted values convert it into linked hashmap</span>
+<span class="fc" id="L59">				.entrySet().stream().map(e -&gt; new WordCountResponse(e.getKey(), e.getValue()))</span>
+<span class="fc" id="L60">				.collect(Collectors.toList());  //convert the map into list again </span>
+		
+<span class="fc" id="L62">		log.debug(&quot;Exiting Method findNoOfOccurance&quot;);</span>
+<span class="fc" id="L63">		return wordCount;</span>
+	}
+	
+	
+	/*
+	 * Method name: addCustomer
+	 * Purpose: to add the customer details into customer table using the CRUD repository save
+	 * Parameters: customer object
+	 */
+
+	@Override
+	@Transactional
+	public Customer addCustomer(Customer customer) {
+	
+<span class="fc" id="L77">		customer.getAddresses().stream().forEach(c-&gt;c.setCustomer(customer)); // setting address from customer object</span>
+		
+		
+<span class="fc" id="L80">		return customerRepo.save(customer);</span>
+	}
+
+<span class="fc" id="L83">	public MyRestServiceImpl(CustomerRepository customerRepo) {</span>
+<span class="fc" id="L84">		this.customerRepo = customerRepo;</span>
+<span class="fc" id="L85">	}</span>
+	
+	
+	/*
+	 * Method name: findById
+	 * Purpose: to find the customer using id using the CRUD repository findById
+	 * Parameter: String id
+	 */
+	
+	@Override
+	public Optional&lt;Customer&gt; findById(String id) {
+
+<span class="fc" id="L97">		return customerRepo.findById(new Long(id));</span>
+	}
+
+
+	/*
+	 * Method name: findById
+	 * Purpose: to find all the customer using the CRUD repository findById
+	 * Parameter: none
+	 */
+	@Override
+	public Iterable&lt;Customer&gt; findAllCustomer() {
+		// TODO Auto-generated method stub
+<span class="fc" id="L109">		return customerRepo.findAll();</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

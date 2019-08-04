@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MyController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">SpringRestWebservice</a> &gt; <a href="index.source.html" class="el_package">com.example.rest.controllers</a> &gt; <span class="el_source">MyController.java</span></div><h1>MyController.java</h1><pre class="source lang-java linenums">/**
+ * 
+ */
+package com.example.rest.controllers;
+
+
+import java.util.List;
+
+import java.util.Optional;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.rest.Models.Customer;
+
+import com.example.rest.Models.WordCountRequest;
+import com.example.rest.Models.WordCountResponse;
+
+import com.example.rest.service.MyRestService;
+
+/**
+ * @author sankark
+ *
+ */
+@RestController
+public class MyController {
+
+<span class="fc" id="L36">	Logger log = LoggerFactory.getLogger(MyController.class);</span>
+
+	private MyRestService service;
+	
+	/*
+	 * Method name: process
+	 * Purpose: to process the POST request and return the response. response returns a JSON object of word and number of occurances. 
+	 * 
+	 */
+
+	@PostMapping(path = &quot;/count&quot;, consumes = &quot;application/json&quot;, produces = &quot;application/json&quot;)
+	public ResponseEntity&lt;Object&gt; process(@RequestBody WordCountRequest wordCountRequest) {
+
+<span class="fc" id="L49">		log.debug(&quot;inside process method&quot;);</span>
+
+<span class="pc bpc" id="L51" title="2 of 4 branches missed.">		if (wordCountRequest.getPara() == null || wordCountRequest.getPara().length() == 0)</span>
+<span class="nc" id="L52">			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(&quot;Paragraph is Empty&quot;);</span>
+
+<span class="fc" id="L54">		List&lt;WordCountResponse&gt; countList = service.findNoOfOccurance(wordCountRequest);</span>
+
+<span class="fc" id="L56">		log.info(&quot;Returning Response&quot;);</span>
+
+<span class="fc" id="L58">		return ResponseEntity.status(200).body(countList);</span>
+	}
+	
+	/*
+	 * Method name: addCustomer
+	 * Purpose: to process the POST request and return the response.  inserts the customer data in db using save method in CRUD repository. 
+	 * Parameter: Customer JSON object
+	 */
+
+
+	@PostMapping(path = &quot;/customer&quot;, consumes = &quot;application/json&quot;, produces = &quot;application/json&quot;)
+	public ResponseEntity&lt;Object&gt; addCustomer(@RequestBody Customer customer) {
+		
+<span class="fc" id="L71">		log.debug(&quot;inside addCustomer method&quot;);</span>
+<span class="fc" id="L72">		service.addCustomer(customer);</span>
+<span class="fc" id="L73">		log.info(&quot;Returning Response&quot;);</span>
+<span class="fc" id="L74">		return ResponseEntity.status(200).body(&quot;Customer data has been added.&quot;);</span>
+	}
+	
+	/*
+	 * Method name: findCustomer
+	 * Purpose: to process the GET request using id as parameter and return the response. response returns a JSON object of Customer for that ID. 
+	 * Paramter: String id
+	 */
+
+	@RequestMapping(value = &quot;/findCustomer&quot;)
+	public ResponseEntity&lt;Object&gt; findCustomer(@RequestParam(value = &quot;id&quot;) String id) {
+		
+<span class="fc" id="L86">		log.debug(&quot;inside findCustomer method&quot;);</span>
+<span class="fc" id="L87">		Optional&lt;Customer&gt; customer = service.findById(id);</span>
+<span class="fc" id="L88">		log.info(&quot;Returning Response&quot;);</span>
+<span class="fc" id="L89">		return ResponseEntity.status(200).body(customer);</span>
+	}
+	
+	
+	/*
+	 * Method name: findAllCustomer
+	 * Purpose: to process the GET request  and return the response. response returns a JSON object of all the Customers. 
+	 * Parameter: none
+	 */
+	
+	@RequestMapping(value = &quot;/findAllCustomer&quot;)
+	public ResponseEntity&lt;Object&gt; findAllCustomer() {
+		
+<span class="fc" id="L102">		log.debug(&quot;inside findCustomer method&quot;);</span>
+<span class="fc" id="L103">		Iterable&lt;Customer&gt; customer = service.findAllCustomer();</span>
+<span class="fc" id="L104">		log.info(&quot;Returning Response&quot;);</span>
+<span class="fc" id="L105">		return ResponseEntity.status(200).body(customer);</span>
+	}
+
+
+<span class="fc" id="L109">	public MyController(MyRestService service) {</span>
+<span class="fc" id="L110">		this.service = service;</span>
+<span class="fc" id="L111">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

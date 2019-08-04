@@ -1,0 +1,358 @@
+2019-08-04 17:25:59.147  INFO 16928 --- [main] e.r.SpringRestWebserviceApplicationTests : Starting SpringRestWebserviceApplicationTests on Karthick-THINK with PID 16928 (started by Karthick in C:\Users\Karthick\eclipse-workspace\spring5-master.zip_expanded\spring5-master\SpringRestWebservice)
+2019-08-04 17:25:59.157  INFO 16928 --- [main] e.r.SpringRestWebserviceApplicationTests : No active profile set, falling back to default profiles: default
+2019-08-04 17:26:04.306  INFO 16928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-04 17:26:04.914  INFO 16928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 528ms. Found 2 repository interfaces.
+2019-08-04 17:26:08.460  INFO 16928 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$90625db7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-04 17:26:09.956  INFO 16928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-04 17:26:12.027  INFO 16928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-04 17:26:12.650  INFO 16928 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-04 17:26:13.159  INFO 16928 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-04 17:26:13.170  INFO 16928 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-08-04 17:26:14.127  INFO 16928 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-04 17:26:15.169  INFO 16928 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-08-04 17:26:21.244  INFO 16928 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1f9831e9'
+2019-08-04 17:26:21.265  INFO 16928 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-04 17:26:26.969  INFO 16928 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-04 17:26:27.445  WARN 16928 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-04 17:26:29.853  INFO 16928 --- [main] com.example.rest.bootStrap.Dataload      : Starting data load..
+2019-08-04 17:26:30.442  INFO 16928 --- [main] com.example.rest.bootStrap.Dataload      : Dataload complete !!
+2019-08-04 17:26:30.459  INFO 16928 --- [main] e.r.SpringRestWebserviceApplicationTests : Started SpringRestWebserviceApplicationTests in 33.631 seconds (JVM running for 42.416)
+2019-08-04 17:26:31.006  INFO 16928 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-08-04 17:26:31.010  INFO 16928 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-08-04 17:26:31.109  INFO 16928 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 98 ms
+2019-08-04 17:26:32.109  INFO 16928 --- [main] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:26:32.516  INFO 16928 --- [main] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:26:36.975  INFO 16928 --- [Thread-7] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-04 17:26:36.987  INFO 16928 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-04 17:26:36.993  INFO 16928 --- [Thread-7] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-08-04 17:26:37.473  INFO 16928 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-04 17:26:37.780  INFO 16928 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-04 17:31:09.681  INFO 1772 --- [main] e.r.SpringRestWebserviceApplicationTests : Starting SpringRestWebserviceApplicationTests on Karthick-THINK with PID 1772 (started by Karthick in C:\Users\Karthick\eclipse-workspace\spring5-master.zip_expanded\spring5-master\SpringRestWebservice)
+2019-08-04 17:31:09.700  INFO 1772 --- [main] e.r.SpringRestWebserviceApplicationTests : No active profile set, falling back to default profiles: default
+2019-08-04 17:31:14.682  INFO 1772 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-04 17:31:15.242  INFO 1772 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 492ms. Found 2 repository interfaces.
+2019-08-04 17:31:18.925  INFO 1772 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2d66824a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-04 17:31:20.811  INFO 1772 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-04 17:31:23.150  INFO 1772 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-04 17:31:23.828  INFO 1772 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-04 17:31:24.564  INFO 1772 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-04 17:31:24.575  INFO 1772 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-08-04 17:31:25.622  INFO 1772 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-04 17:31:26.707  INFO 1772 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-08-04 17:31:32.491  INFO 1772 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@783a4527'
+2019-08-04 17:31:32.525  INFO 1772 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-04 17:31:38.404  INFO 1772 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-04 17:31:38.883  WARN 1772 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-04 17:31:41.447  INFO 1772 --- [main] com.example.rest.bootStrap.Dataload      : Starting data load..
+2019-08-04 17:31:42.246  INFO 1772 --- [main] com.example.rest.bootStrap.Dataload      : Dataload complete !!
+2019-08-04 17:31:42.267  INFO 1772 --- [main] e.r.SpringRestWebserviceApplicationTests : Started SpringRestWebserviceApplicationTests in 35.376 seconds (JVM running for 43.782)
+2019-08-04 17:31:42.777  INFO 1772 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-08-04 17:31:42.783  INFO 1772 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-08-04 17:31:42.894  INFO 1772 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 108 ms
+2019-08-04 17:31:43.898  INFO 1772 --- [main] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:31:44.286  INFO 1772 --- [main] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:31:44.328  WARN 1772 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'id' is not present]
+2019-08-04 17:31:44.692  INFO 1772 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-04 17:31:44.708  INFO 1772 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-04 17:31:46.463  INFO 1772 --- [Thread-6] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-08-04 17:31:46.565  INFO 1772 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-04 17:31:46.897  INFO 1772 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-04 17:34:10.903  INFO 19796 --- [main] e.r.SpringRestWebserviceApplicationTests : Starting SpringRestWebserviceApplicationTests on Karthick-THINK with PID 19796 (started by Karthick in C:\Users\Karthick\eclipse-workspace\spring5-master.zip_expanded\spring5-master\SpringRestWebservice)
+2019-08-04 17:34:10.918  INFO 19796 --- [main] e.r.SpringRestWebserviceApplicationTests : No active profile set, falling back to default profiles: default
+2019-08-04 17:34:16.264  INFO 19796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-04 17:34:17.048  INFO 19796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 712ms. Found 2 repository interfaces.
+2019-08-04 17:34:20.126  INFO 19796 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5f1c200b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-04 17:34:21.644  INFO 19796 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-04 17:34:23.528  INFO 19796 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-04 17:34:24.122  INFO 19796 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-04 17:34:24.760  INFO 19796 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-04 17:34:24.774  INFO 19796 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-08-04 17:34:25.940  INFO 19796 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-04 17:34:27.474  INFO 19796 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-08-04 17:34:33.779  INFO 19796 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@4e6bcc39'
+2019-08-04 17:34:33.811  INFO 19796 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-04 17:34:40.009  INFO 19796 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-04 17:34:40.402  WARN 19796 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-04 17:34:42.399  INFO 19796 --- [main] com.example.rest.bootStrap.Dataload      : Starting data load..
+2019-08-04 17:34:42.985  INFO 19796 --- [main] com.example.rest.bootStrap.Dataload      : Dataload complete !!
+2019-08-04 17:34:43.505  INFO 19796 --- [main] e.r.SpringRestWebserviceApplicationTests : Started SpringRestWebserviceApplicationTests in 35.225 seconds (JVM running for 43.299)
+2019-08-04 17:34:44.058  INFO 19796 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-08-04 17:34:44.061  INFO 19796 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-08-04 17:34:44.163  INFO 19796 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 99 ms
+2019-08-04 17:34:45.123  INFO 19796 --- [main] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:34:45.533  INFO 19796 --- [main] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:34:45.573  WARN 19796 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'id' is not present]
+2019-08-04 17:34:45.975  INFO 19796 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-04 17:34:45.993  INFO 19796 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-04 17:34:45.995  INFO 19796 --- [Thread-6] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-08-04 17:34:47.643  INFO 19796 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-04 17:34:47.943  INFO 19796 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-04 17:36:55.745  INFO 19184 --- [main] e.r.SpringRestWebserviceApplicationTests : Starting SpringRestWebserviceApplicationTests on Karthick-THINK with PID 19184 (started by Karthick in C:\Users\Karthick\eclipse-workspace\spring5-master.zip_expanded\spring5-master\SpringRestWebservice)
+2019-08-04 17:36:55.766  INFO 19184 --- [main] e.r.SpringRestWebserviceApplicationTests : No active profile set, falling back to default profiles: default
+2019-08-04 17:37:00.899  INFO 19184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-04 17:37:01.381  INFO 19184 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 426ms. Found 2 repository interfaces.
+2019-08-04 17:37:04.749  INFO 19184 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e3520b7d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-04 17:37:06.297  INFO 19184 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-04 17:37:08.206  INFO 19184 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-04 17:37:08.899  INFO 19184 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-04 17:37:09.445  INFO 19184 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-04 17:37:09.457  INFO 19184 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-08-04 17:37:10.547  INFO 19184 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-04 17:37:11.643  INFO 19184 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-08-04 17:37:17.900  INFO 19184 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@53fcaf7f'
+2019-08-04 17:37:17.920  INFO 19184 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-04 17:37:23.782  INFO 19184 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-04 17:37:24.248  WARN 19184 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-04 17:37:26.511  INFO 19184 --- [main] com.example.rest.bootStrap.Dataload      : Starting data load..
+2019-08-04 17:37:27.178  INFO 19184 --- [main] com.example.rest.bootStrap.Dataload      : Dataload complete !!
+2019-08-04 17:37:27.201  INFO 19184 --- [main] e.r.SpringRestWebserviceApplicationTests : Started SpringRestWebserviceApplicationTests in 33.948 seconds (JVM running for 41.219)
+2019-08-04 17:37:27.690  INFO 19184 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-08-04 17:37:27.693  INFO 19184 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-08-04 17:37:27.755  INFO 19184 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 61 ms
+2019-08-04 17:37:28.676  INFO 19184 --- [main] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:37:29.092  INFO 19184 --- [main] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:37:29.262  INFO 19184 --- [main] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:37:29.613  INFO 19184 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-08-04 17:37:30.655  INFO 19184 --- [main] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:37:31.043  INFO 19184 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-04 17:37:31.057  INFO 19184 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-04 17:37:31.063  INFO 19184 --- [Thread-6] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-08-04 17:37:32.793  INFO 19184 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-04 17:37:33.046  INFO 19184 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-04 17:39:33.356  INFO 13808 --- [main] e.r.SpringRestWebserviceApplicationTests : Starting SpringRestWebserviceApplicationTests on Karthick-THINK with PID 13808 (started by Karthick in C:\Users\Karthick\eclipse-workspace\spring5-master.zip_expanded\spring5-master\SpringRestWebservice)
+2019-08-04 17:39:33.372  INFO 13808 --- [main] e.r.SpringRestWebserviceApplicationTests : No active profile set, falling back to default profiles: default
+2019-08-04 17:39:38.585  INFO 13808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-04 17:39:39.290  INFO 13808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 617ms. Found 2 repository interfaces.
+2019-08-04 17:39:43.234  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$71bef3a2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-04 17:39:44.952  INFO 13808 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-04 17:39:47.190  INFO 13808 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-04 17:39:47.806  INFO 13808 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-04 17:39:48.325  INFO 13808 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-04 17:39:48.336  INFO 13808 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-08-04 17:39:49.753  INFO 13808 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-04 17:39:51.750  INFO 13808 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-08-04 17:39:58.119  INFO 13808 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@2bbc2154'
+2019-08-04 17:39:58.141  INFO 13808 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-04 17:40:04.671  INFO 13808 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-04 17:40:05.141  WARN 13808 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-04 17:40:07.500  INFO 13808 --- [main] com.example.rest.bootStrap.Dataload      : Starting data load..
+2019-08-04 17:40:08.222  INFO 13808 --- [main] com.example.rest.bootStrap.Dataload      : Dataload complete !!
+2019-08-04 17:40:08.247  INFO 13808 --- [main] e.r.SpringRestWebserviceApplicationTests : Started SpringRestWebserviceApplicationTests in 41.841 seconds (JVM running for 50.235)
+2019-08-04 17:40:08.711  INFO 13808 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-08-04 17:40:08.715  INFO 13808 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-08-04 17:40:08.806  INFO 13808 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 90 ms
+2019-08-04 17:40:09.725  INFO 13808 --- [main] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:40:10.154  INFO 13808 --- [main] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:40:10.376  INFO 13808 --- [main] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:40:10.739  INFO 13808 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-08-04 17:40:11.964  INFO 13808 --- [main] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:40:12.257  INFO 13808 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-04 17:40:12.273  INFO 13808 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-04 17:40:12.286  INFO 13808 --- [Thread-6] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-08-04 17:40:13.845  INFO 13808 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-04 17:40:14.152  INFO 13808 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-04 17:40:39.831  INFO 18636 --- [main] e.r.SpringRestWebserviceApplicationTests : Starting SpringRestWebserviceApplicationTests on Karthick-THINK with PID 18636 (started by Karthick in C:\Users\Karthick\eclipse-workspace\spring5-master.zip_expanded\spring5-master\SpringRestWebservice)
+2019-08-04 17:40:39.836  INFO 18636 --- [main] e.r.SpringRestWebserviceApplicationTests : No active profile set, falling back to default profiles: default
+2019-08-04 17:40:43.020  INFO 18636 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-04 17:40:43.397  INFO 18636 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 337ms. Found 2 repository interfaces.
+2019-08-04 17:40:45.305  INFO 18636 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5c73a976] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-04 17:40:46.304  INFO 18636 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-04 17:40:47.412  INFO 18636 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-04 17:40:47.823  INFO 18636 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-04 17:40:48.177  INFO 18636 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-04 17:40:48.187  INFO 18636 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-08-04 17:40:48.895  INFO 18636 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-04 17:40:49.645  INFO 18636 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-08-04 17:40:53.206  INFO 18636 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@76c86567'
+2019-08-04 17:40:53.222  INFO 18636 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-04 17:40:57.806  INFO 18636 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-04 17:40:58.063  WARN 18636 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-04 17:40:59.968  INFO 18636 --- [main] com.example.rest.bootStrap.Dataload      : Starting data load..
+2019-08-04 17:41:01.004  INFO 18636 --- [main] com.example.rest.bootStrap.Dataload      : Dataload complete !!
+2019-08-04 17:41:01.022  INFO 18636 --- [main] e.r.SpringRestWebserviceApplicationTests : Started SpringRestWebserviceApplicationTests in 22.468 seconds (JVM running for 27.591)
+2019-08-04 17:41:01.441  INFO 18636 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-08-04 17:41:01.445  INFO 18636 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-08-04 17:41:01.527  INFO 18636 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 81 ms
+2019-08-04 17:41:02.198  INFO 18636 --- [main] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:41:02.409  WARN 18636 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting a colon to separate field name and value
+ at [Source: (PushbackInputStream); line: 1, column: 5]]
+2019-08-04 17:41:02.514  INFO 18636 --- [main] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:41:02.644  INFO 18636 --- [main] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:41:02.916  INFO 18636 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-08-04 17:41:03.408  INFO 18636 --- [main] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:41:03.470  INFO 18636 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-04 17:41:03.480  INFO 18636 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-04 17:41:03.482  INFO 18636 --- [Thread-5] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-08-04 17:41:03.578  WARN 18636 --- [Thread-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2019-08-04 17:41:03.583 ERROR 18636 --- [Thread-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-199]
+2019-08-04 17:41:03.593  WARN 18636 --- [Thread-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2019-08-04 17:41:03.594 ERROR 18636 --- [Thread-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-199]
+2019-08-04 17:41:03.595  INFO 18636 --- [Thread-5] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution
+2019-08-04 17:41:03.611  INFO 18636 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-04 17:41:03.629  INFO 18636 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-04 17:43:06.389  INFO 18600 --- [main] e.r.SpringRestWebserviceApplicationTests : Starting SpringRestWebserviceApplicationTests on Karthick-THINK with PID 18600 (started by Karthick in C:\Users\Karthick\eclipse-workspace\spring5-master.zip_expanded\spring5-master\SpringRestWebservice)
+2019-08-04 17:43:06.395  INFO 18600 --- [main] e.r.SpringRestWebserviceApplicationTests : No active profile set, falling back to default profiles: default
+2019-08-04 17:43:09.502  INFO 18600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-04 17:43:09.943  INFO 18600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 397ms. Found 1 repository interfaces.
+2019-08-04 17:43:11.922  INFO 18600 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$23b26e9d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-04 17:43:12.987  INFO 18600 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-04 17:43:14.130  INFO 18600 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-04 17:43:14.527  INFO 18600 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-04 17:43:14.866  INFO 18600 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-04 17:43:14.876  INFO 18600 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-08-04 17:43:15.587  INFO 18600 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-04 17:43:16.284  INFO 18600 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-08-04 17:43:19.755  INFO 18600 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@6cc64028'
+2019-08-04 17:43:19.771  INFO 18600 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-04 17:43:24.530  INFO 18600 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-04 17:43:24.928  WARN 18600 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-04 17:43:27.346  INFO 18600 --- [main] com.example.rest.bootStrap.Dataload      : Starting data load..
+2019-08-04 17:43:28.307  INFO 18600 --- [main] com.example.rest.bootStrap.Dataload      : Dataload complete !!
+2019-08-04 17:43:28.326  INFO 18600 --- [main] e.r.SpringRestWebserviceApplicationTests : Started SpringRestWebserviceApplicationTests in 23.151 seconds (JVM running for 27.126)
+2019-08-04 17:43:28.707  INFO 18600 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-08-04 17:43:28.712  INFO 18600 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-08-04 17:43:28.795  INFO 18600 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 81 ms
+2019-08-04 17:43:29.454  INFO 18600 --- [main] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:43:29.635  WARN 18600 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting a colon to separate field name and value
+ at [Source: (PushbackInputStream); line: 1, column: 5]]
+2019-08-04 17:43:29.735  INFO 18600 --- [main] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:43:29.855  INFO 18600 --- [main] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:43:30.100  INFO 18600 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-08-04 17:43:30.624  INFO 18600 --- [main] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:43:30.692  INFO 18600 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-04 17:43:30.700  INFO 18600 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-04 17:43:30.702  INFO 18600 --- [Thread-5] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-08-04 17:43:30.724  WARN 18600 --- [Thread-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2019-08-04 17:43:30.728 ERROR 18600 --- [Thread-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-199]
+2019-08-04 17:43:30.738  WARN 18600 --- [Thread-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2019-08-04 17:43:30.738 ERROR 18600 --- [Thread-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-199]
+2019-08-04 17:43:30.740  INFO 18600 --- [Thread-5] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution
+2019-08-04 17:43:30.754  INFO 18600 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-04 17:43:30.774  INFO 18600 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-04 17:44:52.382  INFO 19644 --- [main] e.r.SpringRestWebserviceApplicationTests : Starting SpringRestWebserviceApplicationTests on Karthick-THINK with PID 19644 (started by Karthick in C:\Users\Karthick\eclipse-workspace\spring5-master.zip_expanded\spring5-master\SpringRestWebservice)
+2019-08-04 17:44:52.393  INFO 19644 --- [main] e.r.SpringRestWebserviceApplicationTests : No active profile set, falling back to default profiles: default
+2019-08-04 17:44:57.410  INFO 19644 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-04 17:44:59.008  INFO 19644 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 419ms. Found 1 repository interfaces.
+2019-08-04 17:45:02.010  INFO 19644 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e840b096] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-04 17:45:03.507  INFO 19644 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-04 17:45:05.875  INFO 19644 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-04 17:45:06.441  INFO 19644 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-04 17:45:07.065  INFO 19644 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-04 17:45:07.075  INFO 19644 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-08-04 17:45:08.182  INFO 19644 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-04 17:45:09.722  INFO 19644 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-08-04 17:45:15.598  INFO 19644 --- [main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@6f685ec'
+2019-08-04 17:45:15.622  INFO 19644 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-04 17:45:23.078  INFO 19644 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-04 17:45:23.522  WARN 19644 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-04 17:45:25.897  INFO 19644 --- [main] com.example.rest.bootStrap.Dataload      : Starting data load..
+2019-08-04 17:45:26.432  INFO 19644 --- [main] com.example.rest.bootStrap.Dataload      : Dataload complete !!
+2019-08-04 17:45:26.450  INFO 19644 --- [main] e.r.SpringRestWebserviceApplicationTests : Started SpringRestWebserviceApplicationTests in 36.505 seconds (JVM running for 43.638)
+2019-08-04 17:45:26.900  INFO 19644 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-08-04 17:45:26.904  INFO 19644 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-08-04 17:45:26.990  INFO 19644 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 85 ms
+2019-08-04 17:45:28.043  INFO 19644 --- [main] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:45:28.293  WARN 19644 --- [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting a colon to separate field name and value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting a colon to separate field name and value
+ at [Source: (PushbackInputStream); line: 1, column: 5]]
+2019-08-04 17:45:28.414  INFO 19644 --- [main] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:45:28.585  INFO 19644 --- [main] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:45:28.910  INFO 19644 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-08-04 17:45:30.088  INFO 19644 --- [main] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:45:30.527  INFO 19644 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-04 17:45:30.543  INFO 19644 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-04 17:45:30.551  INFO 19644 --- [Thread-6] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-08-04 17:45:33.297  INFO 19644 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-04 17:45:34.184  INFO 19644 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-04 17:47:01.618  INFO 17088 --- [restartedMain] c.e.r.SpringRestWebserviceApplication    : Starting SpringRestWebserviceApplication on Karthick-THINK with PID 17088 (C:\Users\Karthick\eclipse-workspace\spring5-master.zip_expanded\spring5-master\SpringRestWebservice\target\classes started by Karthick in C:\Users\Karthick\eclipse-workspace\spring5-master.zip_expanded\spring5-master\SpringRestWebservice)
+2019-08-04 17:47:01.628  INFO 17088 --- [restartedMain] c.e.r.SpringRestWebserviceApplication    : No active profile set, falling back to default profiles: default
+2019-08-04 17:47:01.772  INFO 17088 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-04 17:47:01.773  INFO 17088 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-04 17:47:04.242  INFO 17088 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-04 17:47:04.478  INFO 17088 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 207ms. Found 1 repository interfaces.
+2019-08-04 17:47:05.691  INFO 17088 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c09d1a73] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-04 17:47:09.445  INFO 17088 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-08-04 17:47:09.531  INFO 17088 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-04 17:47:09.535  INFO 17088 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-04 17:47:09.916  INFO 17088 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-04 17:47:09.917  INFO 17088 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8143 ms
+2019-08-04 17:47:10.438  INFO 17088 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-04 17:47:10.881  INFO 17088 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-04 17:47:11.397  INFO 17088 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-04 17:47:11.625  INFO 17088 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-04 17:47:11.632  INFO 17088 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-08-04 17:47:12.100  INFO 17088 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-04 17:47:12.580  INFO 17088 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-08-04 17:47:14.994  INFO 17088 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@660b6f0c'
+2019-08-04 17:47:15.007  INFO 17088 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-04 17:47:15.159  INFO 17088 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-04 17:47:16.834  INFO 17088 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-04 17:47:16.959  WARN 17088 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-04 17:47:17.553  INFO 17088 --- [restartedMain] com.example.rest.bootStrap.Dataload      : Starting data load..
+2019-08-04 17:47:17.821  INFO 17088 --- [restartedMain] com.example.rest.bootStrap.Dataload      : Dataload complete !!
+2019-08-04 17:47:17.901  INFO 17088 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-04 17:47:17.912  INFO 17088 --- [restartedMain] c.e.r.SpringRestWebserviceApplication    : Started SpringRestWebserviceApplication in 17.411 seconds (JVM running for 21.123)
+2019-08-04 17:55:58.412  INFO 17088 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-04 17:55:58.418  INFO 17088 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-04 17:55:58.457  INFO 17088 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 36 ms
+2019-08-04 17:55:58.760  INFO 17088 --- [http-nio-8080-exec-2] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:57:34.108  INFO 17088 --- [Thread-7] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-04 17:57:34.113  INFO 17088 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-04 17:57:34.117  INFO 17088 --- [Thread-7] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-08-04 17:57:34.150  INFO 17088 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-04 17:57:34.423  INFO 17088 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-04 17:57:35.681  INFO 17088 --- [restartedMain] c.e.r.SpringRestWebserviceApplication    : Starting SpringRestWebserviceApplication on Karthick-THINK with PID 17088 (C:\Users\Karthick\eclipse-workspace\spring5-master.zip_expanded\spring5-master\SpringRestWebservice\target\classes started by Karthick in C:\Users\Karthick\eclipse-workspace\spring5-master.zip_expanded\spring5-master\SpringRestWebservice)
+2019-08-04 17:57:35.683  INFO 17088 --- [restartedMain] c.e.r.SpringRestWebserviceApplication    : No active profile set, falling back to default profiles: default
+2019-08-04 17:57:36.638  INFO 17088 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-04 17:57:36.701  INFO 17088 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59ms. Found 1 repository interfaces.
+2019-08-04 17:57:36.944  INFO 17088 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c09d1a73] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-04 17:57:37.394  INFO 17088 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-08-04 17:57:37.398  INFO 17088 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-04 17:57:37.399  INFO 17088 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-04 17:57:37.464  INFO 17088 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-04 17:57:37.464  INFO 17088 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1772 ms
+2019-08-04 17:57:37.641  INFO 17088 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2019-08-04 17:57:37.667  INFO 17088 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2019-08-04 17:57:37.700  INFO 17088 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-04 17:57:37.750  INFO 17088 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-08-04 17:57:37.994  INFO 17088 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@660b6f0c'
+2019-08-04 17:57:37.995  INFO 17088 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-04 17:57:38.046  INFO 17088 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-04 17:57:38.463  INFO 17088 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-04 17:57:38.486  WARN 17088 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-04 17:57:38.787  INFO 17088 --- [restartedMain] com.example.rest.bootStrap.Dataload      : Starting data load..
+2019-08-04 17:57:38.805  INFO 17088 --- [restartedMain] com.example.rest.bootStrap.Dataload      : Dataload complete !!
+2019-08-04 17:57:38.824  INFO 17088 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-04 17:57:38.829  INFO 17088 --- [restartedMain] c.e.r.SpringRestWebserviceApplication    : Started SpringRestWebserviceApplication in 3.277 seconds (JVM running for 642.04)
+2019-08-04 17:57:38.837  INFO 17088 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-08-04 17:57:49.549  INFO 17088 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-04 17:57:49.554  INFO 17088 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-04 17:57:49.573  INFO 17088 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2019-08-04 17:57:49.925  INFO 17088 --- [http-nio-8080-exec-3] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:57:58.575  INFO 17088 --- [http-nio-8080-exec-2] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 17:59:31.360  INFO 17088 --- [http-nio-8080-exec-6] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-08-04 17:59:31.650  INFO 17088 --- [http-nio-8080-exec-6] c.example.rest.controllers.MyController  : Returning Response
+2019-08-04 18:25:21.591  INFO 17088 --- [Thread-12] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-04 18:25:21.596  INFO 17088 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-04 18:25:21.600  INFO 17088 --- [Thread-12] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-08-04 18:25:21.617  INFO 17088 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2019-08-04 18:25:21.627  INFO 17088 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.

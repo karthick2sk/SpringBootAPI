@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Dataload.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">SpringRestWebservice</a> &gt; <a href="index.source.html" class="el_package">com.example.rest.bootStrap</a> &gt; <span class="el_source">Dataload.java</span></div><h1>Dataload.java</h1><pre class="source lang-java linenums">/**
+ * 
+ */
+package com.example.rest.bootStrap;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.context.ApplicationListener;
+import org.springframework.context.event.ContextRefreshedEvent;
+import org.springframework.stereotype.Component;
+
+import com.example.rest.Models.Customer;
+import com.example.rest.repositories.CustomerRepository;
+
+/**
+ * @author sankark
+ *
+ */
+@Component
+
+public class Dataload implements ApplicationListener&lt;ContextRefreshedEvent&gt; {
+
+	CustomerRepository repo;
+
+<span class="fc" id="L28">	Logger log = LoggerFactory.getLogger(Dataload.class);</span>
+
+	@Override
+	public void onApplicationEvent(ContextRefreshedEvent event) {
+		// TODO Auto-generated method stub
+<span class="fc" id="L33">		log.info(&quot;Starting data load..&quot;);</span>
+<span class="fc" id="L34">		repo.saveAll(loadData());</span>
+<span class="fc" id="L35">		log.info(&quot;Dataload complete !!&quot;);</span>
+
+<span class="fc" id="L37">	}</span>
+
+	private List&lt;Customer&gt; loadData() {
+<span class="fc" id="L40">		List&lt;Customer&gt; customer = new ArrayList&lt;Customer&gt;();</span>
+<span class="fc" id="L41">		Customer c1 = new Customer();</span>
+<span class="fc" id="L42">		c1.setFst_nm(&quot;John&quot;);</span>
+<span class="fc" id="L43">		c1.setLast_nm(&quot;Snow&quot;);</span>
+<span class="fc" id="L44">		c1.setDob(&quot;01 Jan 1950&quot;);</span>
+<span class="fc" id="L45">		c1.setGender(&quot;Male&quot;);</span>
+<span class="fc" id="L46">		c1.setPhone(&quot;1234567890&quot;);</span>
+<span class="fc" id="L47">		customer.add(c1);</span>
+		
+<span class="fc" id="L49">		c1 = new Customer();</span>
+<span class="fc" id="L50">		c1.setFst_nm(&quot;Arya&quot;);</span>
+<span class="fc" id="L51">		c1.setLast_nm(&quot;Stark&quot;);</span>
+<span class="fc" id="L52">		c1.setDob(&quot;01 Jan 1970&quot;);</span>
+<span class="fc" id="L53">		c1.setGender(&quot;Female&quot;);</span>
+<span class="fc" id="L54">		c1.setPhone(&quot;9876543210&quot;);</span>
+<span class="fc" id="L55">		customer.add(c1);</span>
+
+<span class="fc" id="L57">		return customer;</span>
+
+	}
+
+<span class="fc" id="L61">	public Dataload(CustomerRepository repo) {</span>
+<span class="fc" id="L62">		this.repo = repo;</span>
+<span class="fc" id="L63">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>
